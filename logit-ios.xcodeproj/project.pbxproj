@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2ECE5019EB3A85000BDD0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2ECE4F19EB3A85000BDD0B /* CoreLocation.framework */; };
 		BEB85B4319EB3778008D0407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB85B4219EB3778008D0407 /* AppDelegate.swift */; };
 		BEB85B4519EB3778008D0407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB85B4419EB3778008D0407 /* ViewController.swift */; };
-		BEB85B4819EB3778008D0407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB85B4619EB3778008D0407 /* Main.storyboard */; };
 		BEB85B4A19EB3778008D0407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB85B4919EB3778008D0407 /* Images.xcassets */; };
 		BEB85B4D19EB3778008D0407 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB85B4B19EB3778008D0407 /* LaunchScreen.xib */; };
 		BEB85B5919EB3778008D0407 /* logit_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB85B5819EB3778008D0407 /* logit_iosTests.swift */; };
@@ -26,11 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE2ECE4F19EB3A85000BDD0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BEB85B3D19EB3778008D0407 /* logit-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logit-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB85B4119EB3778008D0407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB85B4219EB3778008D0407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEB85B4419EB3778008D0407 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BEB85B4719EB3778008D0407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEB85B4919EB3778008D0407 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEB85B4C19EB3778008D0407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BEB85B5219EB3778008D0407 /* logit-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "logit-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2ECE5019EB3A85000BDD0B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +60,7 @@
 		BEB85B3419EB3778008D0407 = {
 			isa = PBXGroup;
 			children = (
+				BE2ECE4F19EB3A85000BDD0B /* CoreLocation.framework */,
 				BEB85B3F19EB3778008D0407 /* logit-ios */,
 				BEB85B5519EB3778008D0407 /* logit-iosTests */,
 				BEB85B3E19EB3778008D0407 /* Products */,
@@ -79,7 +81,6 @@
 			children = (
 				BEB85B4219EB3778008D0407 /* AppDelegate.swift */,
 				BEB85B4419EB3778008D0407 /* ViewController.swift */,
-				BEB85B4619EB3778008D0407 /* Main.storyboard */,
 				BEB85B4919EB3778008D0407 /* Images.xcassets */,
 				BEB85B4B19EB3778008D0407 /* LaunchScreen.xib */,
 				BEB85B4019EB3778008D0407 /* Supporting Files */,
@@ -161,6 +162,11 @@
 				TargetAttributes = {
 					BEB85B3C19EB3778008D0407 = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					BEB85B5119EB3778008D0407 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -192,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB85B4819EB3778008D0407 /* Main.storyboard in Resources */,
 				BEB85B4D19EB3778008D0407 /* LaunchScreen.xib in Resources */,
 				BEB85B4A19EB3778008D0407 /* Images.xcassets in Resources */,
 			);
@@ -236,14 +241,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BEB85B4619EB3778008D0407 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEB85B4719EB3778008D0407 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BEB85B4B19EB3778008D0407 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +404,7 @@
 				BEB85B5E19EB3778008D0407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEB85B5F19EB3778008D0407 /* Build configuration list for PBXNativeTarget "logit-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +413,7 @@
 				BEB85B6119EB3778008D0407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
